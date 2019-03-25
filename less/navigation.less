@@ -1,1 +1,24 @@
 // Navigation Styles here
+
+.Nav{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px dashed lightgrey;
+    padding: @padding;
+
+    a {
+        align-items: flex-end;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+    }
+}
+
+//Mobile 
+
+@media(@mobile){
+    .Nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
